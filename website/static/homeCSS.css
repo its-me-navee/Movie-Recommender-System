@@ -1,0 +1,35 @@
+.heading {
+    padding: 2rem;
+    text-align: center;
+}
+
+.drpdwn {
+    width: 13rem;
+    background-color: aliceblue;
+    border-color: black;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.drpdwn_item {
+    width: 100%;
+    border-color: black;
+    text-align: center;
+}
+
+.scrollbar {
+    direction: rtl;
+    max-height: 25rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.btnstyle {
+    margin: 1rem;
+    margin-bottom: 5rem;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 8px;
+    width: 7rem;
+    height: 40px;
+}

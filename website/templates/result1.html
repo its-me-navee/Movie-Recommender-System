@@ -1,0 +1,104 @@
+{% extends "home.html" %}
+{% block title %} Results {% endblock %}
+{% block cssfile %}
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='result1CSS.css')}}">
+{% endblock %}
+{% block content %}
+<h1 class="heDing"> Movies related to {{ name }} </h1>
+
+<div>
+    <div class="card-group">
+
+        <div class="col-sm-3" style="float: left;">
+            <div class="card-body" style="float: left;">
+                <img style="float: left; margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[3] }}">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card-body">
+                <img style="float: left; margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[2] }}">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card-body">
+                <img style="float: left; margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[1] }}">
+            </div>
+        </div>
+
+        <div class="col-sm-3">
+            <div class="card-body">
+                <img style="float: left; margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[0] }}">
+            </div>
+        </div>
+
+    </div>
+
+    <span id="more">
+
+
+        <div class="card-group">
+
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <img style="margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[7] }}">
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <img style="margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[6] }}">
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <img style="margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[5] }}">
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <img style="margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[4] }}">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card-group">
+
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <img style="float: left; margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[11] }}">
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <img style="float: left; margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[10] }}">
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <img style="float: right; margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[9] }}">
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <div class="card-body">
+                    <img style="float: right; margin: 5px; width: 100%; height: 18rem;" src="{{ movie_list[8] }}">
+                </div>
+            </div>
+
+        </div>
+
+    </span>
+</div>
+
+<center>
+    <button class="btnstyle" onclick="myFunction()" id="myBtn">Show more</button>
+</center>
+
+{% endblock %}

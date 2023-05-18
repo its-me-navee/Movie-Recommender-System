@@ -1,0 +1,17 @@
+.heding {
+    margin: 1rem;
+    text-align: center;
+}
+
+#more {
+    display: none;
+}
+
+.btnstyle {
+    margin: 1rem;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 10px;
+    width: 8rem;
+    height: 3rem;
+}
